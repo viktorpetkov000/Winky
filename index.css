@@ -1,0 +1,642 @@
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('/img/btexture.jpg');
+  background-repeat:repeat;
+}
+
+button:active, button:active {
+  position:relative;
+  top:1px;
+}
+
+#split {
+  position: absolute;
+  margin: auto;
+  height: 90vh;
+  width: 99vw;
+  background-image: -webkit-linear-gradient(-45deg, #140137 47%, #200159 47%);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+#tttGame {
+  width: 100%;
+  height: 100%;
+}
+
+#dttGame {
+  width: 100%;
+  height: 100%;
+}
+
+#menuWrapper {
+  background:rgba(255,255,255,0.05);
+  width: 99vw;
+  height: 6.4vh;
+  min-height: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+#menu {
+  margin-top: 6px;
+}
+
+#menu button, #window button, #message button, #prompt button {
+  background-color:#6023ed;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:17px;
+  padding:14px 28px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #520bbd;
+  border:none;
+  outline: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#menu button:hover, #window button:hover,
+#message button:hover, #prompt button:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color:#d10a92;
+}
+
+.message .ui-dialog-titlebar-close {
+  display: none;
+}
+
+#message {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#games-content {
+  display: none;
+  position: absolute;
+  background-color: #2B3238;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#games-content span {
+  color: #c3cbd1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+#games-content span:hover {
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  background-color: #d10a92;
+}
+
+#dropdown:hover #games-content {
+  display: block;
+}
+
+#dropdown:hover #games {
+  background-color: #d10a92;
+}
+
+#window input, #prompt input {
+  background-color: #3A4149;
+  border-color: #3A4149;
+  color: #c3cbd1;
+  outline: none;
+}
+
+#window input.text, #prompt input.text {
+  margin-bottom: 12px;
+  width: 95%;
+  padding: .4em;
+}
+
+#window fieldset {
+  padding: 0;
+  border: 0;
+  margin-top: 5px;
+}
+
+#window h1 {
+  font-size: 1.2em;
+  margin: .6em 0;
+}
+
+#window button, #message button, #prompt button {
+  text-align: center;
+  width: 100%;
+  background-color: #e51e68;
+  color: #e0e4e7;
+}
+
+#message p, #prompt p {
+  color: #d6dce0;
+}
+
+#window, #message, #prompt, .ui-dialog, .ui-dialog-titlebar {
+  background-color: #2b3238;
+  border-color: #3a434b;
+  overflow:hidden;
+}
+
+#lobby {
+  height: 80vh;
+  width: 97vw;
+  margin-top: 10px;
+}
+
+#tttGame #gameWrapper {
+  float:right;
+  height: 110%;
+  width: 69%;
+  text-align: center;
+}
+
+#tttGame #turn {
+  color: #c3cbd1;
+}
+
+#tttGame #rooms {
+  background: linear-gradient( rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70) ), url('/img/btexture.jpg');
+  background-repeat:repeat;
+  border: 1px solid black;
+  height: 46%;
+  width: 30%;
+  margin-bottom: 3px;
+  overflow: auto;
+  border-top-left-radius: 50px;
+}
+
+#tttGame #right {
+  margin-left: auto;
+}
+
+#tttGame #chat {
+  background: linear-gradient( rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70) ), url('/img/btexture.jpg');
+  background-repeat:repeat;
+  border: 1px solid black;
+  height: 46%;
+  width: 30%;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#tttGame #msg {
+  background-color: #3A4149;
+  border-color: #3A4149;
+  color: #c3cbd1;
+  outline: none;
+  padding: 3px 5px;
+  width: 100%;
+  margin-left: 5px;
+}
+
+#tttGame #create, #tttGame #start {
+  background-color: #8252f1;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:17px;
+  padding:5px 10px;
+  margin-left: 3px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #520bbd;
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: black;
+  border:none;
+  outline: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#tttGame #createWrapper, #tttGame #msgWrapper {
+  background: linear-gradient( rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70) ), url('/img/btexture.jpg');
+  border: 1px solid black;
+  background-repeat:repeat;
+  width: 30%;
+  height: 37px;
+  display: flex;
+  align-items: center;
+}
+
+#tttGame #msgWrapper {
+  border-bottom-left-radius: 30px;
+}
+
+#tttGame #msg {
+  border-bottom-left-radius: 15px;
+}
+
+#tttGame #players, #tttGame #host, #tttGame #send,
+#tttGame #createWrapper, #tttGame #msgWrapper,
+#tttGame #rooms, #tttGame #chat {
+  margin-right: 5px;
+}
+
+#tttGame #rooms button, #tttGame #send {
+  background-color: #24292e;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:15px;
+  padding:3px 7px;
+  margin-left: 3px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #520bbd;
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: black;
+  border:none;
+  outline: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#tttGame #rooms button:hover, #tttGame #send:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color:#d10a92;
+}
+
+#tttGame #create:hover, #tttGame #start:hover:enabled {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color:#d10a92;
+}
+
+#tttGame #start:disabled {
+  background-color: #a481f5;
+  cursor: default;
+}
+
+#tttGame .chatmessage {
+  border: 1px solid #49545e;
+  color: #d6dce0;
+  margin-top: 3px;
+  margin-left: 4px;
+  margin-bottom: 3px;
+  padding: 2px 3px;
+  width: 96.5%;
+  height: auto;
+  font-family: Helvetica;
+}
+
+#tttGame .room {
+  border: 1px solid #49545e;
+  width: 93.5%;
+  height: 26px;
+  margin: 4px;
+  margin-bottom: 0;
+  margin-left: 14px;
+  padding: 3px;
+  font-family: Helvetica;
+  color: #d6dce0;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#tttGame .room #name {
+  margin-left: 8px;
+}
+
+#dttGame #gameWrapper {
+  height: 90vh;
+  width: 98.1vw;
+  margin:auto;
+}
+
+#dttGame #title {
+  font-size: 80px;
+  color: #d6dce0;
+  font-family: Helvetica;
+  word-spacing: 0.2vw;
+  letter-spacing: 0.2vw;
+  margin-top: 0;
+  text-align: center;
+}
+
+#dttGame #rooms {
+  position:relative;
+  border: 1px solid black;
+  background: linear-gradient( rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70) ), url('/img/btexture.jpg');
+  background-repeat:repeat;
+  width: 75%;
+  margin: -2vw auto;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow-y: auto;
+}
+
+#dttGame #dttCanvas {
+  display:none;
+  width: 89.5%;
+  height: 93%;
+  background-color:white;
+  border-bottom: 1px solid black;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#dttGame #dttCreate {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#dttGame #dttCreate #createRoom {
+  color: #d6dce0;
+  font-size: 32px;
+  letter-spacing: 0.2px;
+}
+
+#dttGame #dttCreate #plus {
+  color: #d6dce0;
+  font-weight: bold;
+  font-size: 54px;
+  margin-left: 10px;
+}
+
+#dttGame .room {
+  border: 1px solid black;
+  display:flex;
+  align-items: center;
+  margin: 2px;
+  padding: 5px 15px;
+  height: 50px;
+  width: 99%;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background-color: rgba(193, 9, 135, 0.3);
+  color: #d6dce0;
+  font-size: 24px;
+}
+
+#dttGame .room span {
+  margin-left: 5px;
+}
+
+#dttGame .room:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background-color: #c10987
+}
+
+#dttGame .roomLobby {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 70%;
+  width: 65%;
+  margin: auto;
+  background: linear-gradient( rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70) ), url('/img/btexture.jpg');
+  background-repeat:repeat;
+}
+
+#dttGame .player {
+  background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ), url('/img/btexture.jpg');
+  background-repeat:repeat;
+  border: 1px solid black;
+  height: 30%;
+  width: 15%;
+  padding: 10px 15px;
+  color: #d6dce0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  margin-top: 3.5%;
+  margin-left: 11.35%;
+}
+
+#dttGame .player:hover {
+  background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url('/img/btexture.jpg');
+  background-repeat:repeat;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+#dttGame .player img {
+  margin: auto;
+}
+
+#dttGame .player span {
+  display: flex;
+  font-size: 30px;
+}
+
+#dttGame #gameButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+#dttGame #gameButtons #start {
+  margin-left: 16vw;
+}
+
+#dttGame #gameButtons button {
+  background-color: #8252f1;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:32px;
+  padding:5px 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #520bbd;
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: black;
+  border:none;
+  outline: none;
+  width: 24vw;
+  height: 8vh;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#dttGame #gameButtons button:disabled {
+  background-color: #a481f5;
+  cursor: default;
+}
+
+#dttGame #gameButtons button:hover:enabled {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color:#d10a92;
+}
+
+#dttGame #playerList {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('/img/btexture.jpg');
+  padding-top: 2px;
+  padding-left: 2px;
+  background-repeat: repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  width: 10%;
+  float:left;
+  background-color: rgba(0,0,0,0.7);
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+#dttGame .playerInGame {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1%;
+  justify-content: center;
+  border: 1px solid black;
+  width: 95%;
+}
+
+#dttGame .playerInGame:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.6);
+}
+
+#dttGame .playerInGame span {
+  width: 45%;
+  color: #d6dce0;
+}
+
+#dttGame #colors {
+  float: left;
+  margin-left: 5px;
+}
+
+#dttGame .color {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+}
+
+#black { background-color: black; }
+#red { background-color: red; }
+#blue { background-color: blue; }
+#green { background-color: green; }
+#yellow { background-color: yellow; }
+#purple { background-color: purple; }
+#white {
+     background-image: url("/img/eraser.png");
+     background-size: 100%;
+     margin-left: 10px;
+}
+#dttGame .color:hover {
+  cursor: pointer;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.ui-widget-content.ui-dialog {
+  border-color: #2b3238;
+}
+
+.ui-dialog-titlebar, .ui-dialog-titlebar-close {
+  color: #c3cbd1;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #2B3238;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #15181B;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}

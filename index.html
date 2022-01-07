@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/jquery-ui/jquery-ui.min.js"></script>
+    <script src="index.js"></script>
+    <script src="tictactoe/tictactoe.js"></script>
+    <script src="drawthething/drawthething.js"></script>
+    <link rel="stylesheet" type="text/css" href="/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <title>Winky</title>
+</head>
+<body>
+  <div id="menuWrapper">
+    <div class="center">
+      <div id="menu">
+        <div id="dropdown">
+          <button id="games">Games</button>
+          <div id="games-content">
+            <span id='ttt'>Tic Tac Toe</span>
+            <span id='dtt'>Draw Together</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="split"></div>
+  <div id="prompt">
+    <input type="text" id="newName" class="text ui-widget-content ui-corner-all" placeholder="Name"/>
+    <button type="button" id="submitName">Submit</button>
+  </div>
+  <div id="window"></div>
+  <div id="lobby"></div>
+  <div id="message"></div>
+</body>
+</html>
